@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>CSS fun</title>
+
+</head>
+
+<style>
+
+ .parent {
+
+  background-color: hsl(200, 100%, 20%);
+  height: 600px;
+  width: 600px;
+  position: relative;
+  
+ }
+
+ .child {
+  filter: blur(20px);
+  border-radius: 15px;
+  height: 50%;
+  width: 50%;
+  background-color: hsl(343, 100%, 53%) ;
+  transition: 2s;
+ }
+ 
+ .second-child {  
+  filter: blur(20px);
+  border-radius: 15px;
+ position: absolute;
+  height: 50%;
+  width: 50%;
+  background-color: hsl(224, 8%, 36%);
+  transition: 2s;
+  bottom: 0%;
+  left: 50%;
+ }
+
+ .third-child {
+  filter: blur(20px);
+  border-radius: 15px;
+  position: absolute;
+  background-color: hsl(345, 40%, 33%);
+  height: 50%;
+  width: 50%;
+  bottom: 0%;
+  right: 50%;
+  transition: 2s;
+ }
+
+ .fourth-child{
+  filter: blur(20px);
+  border-radius: 15px;
+  position: absolute;
+  background-color: hsl(174, 17%, 46%);
+  height: 50%;
+  width: 50%;
+  bottom: 50%;
+  left: 50%;
+  transition: 2s;
+ 
+ }
+
+.parent:hover .child{
+ background-color: hsl(176, 42%, 50%);
+ transform: translateX(100%);
+}
+
+.parent:hover .second-child{
+ background-color: hsl(212, 43%, 65%);
+ transform: translateX(-100%)
+}
+
+.parent:hover .third-child{
+ background-color: hsl(44, 94%, 63%);
+ transform: translateY(-100%);
+
+}
+
+.parent:hover .fourth-child{
+ background-color: hsl(300, 24%, 66%);
+ transform: translateY(100%)
+}
+</style>
+
+<body>
+
+ <div class="parent">
+ 
+  <div class="child" ></div>
+  
+  <div class="second-child" ></div>
+  
+  <div class="third-child" ></div>
+
+  <div class="fourth-child" ></div>
+  
+
+ </div>
+
+
+</body>
+</html>
