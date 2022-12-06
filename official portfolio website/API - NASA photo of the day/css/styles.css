@@ -1,0 +1,101 @@
+* {
+ font-family: sans-serif;
+}
+html{
+ background-color: black;
+}
+header {
+ background: #547282;
+ width:100%;
+ color:#FFFFFF;
+ font-size: 10px;
+ text-align: center;
+ margin: 0px;
+}
+
+header > h1 {
+ margin: 0;
+ padding: 20px 0 0 0;
+font-size: 2.3em;
+text-shadow: 2px 2px 4px black;
+}
+
+body  {
+ margin: 5px;
+}
+section{
+ background-color: #7097da;
+ margin-top: 0;
+ padding-bottom: 20px;
+ user-select: none;
+ height: 980px;
+}
+
+section > h1 {
+ font-size: 2.8em;
+ text-align:center;
+ margin: 0 0;
+ padding: 20px 0;
+}
+
+section > p {
+ width: 800px;
+ margin: 0 auto;
+ font-size: 1.3em;
+ line-height: 1.4;
+ font-family: sans-serif;
+ text-align: center;
+}
+
+
+div#dateContainer{
+ width: 800px;
+ margin: 0px auto;
+ text-align: center;
+}
+
+div#nasaImage{
+ width: 800px;
+ display:block;
+ margin-top:20px;
+ text-align: center;
+}
+
+img{
+ display: block;
+ height: 500px;
+ width: auto;
+ max-width: 800px;
+ margin: 10px auto;
+}
+
+iframe{ 
+ display: block;
+ width: 800px;
+ height: 500px;
+ margin: 10px auto;
+}
+
+a {
+ display: block;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+ padding: 10px;
+ text-shadow: .5px .5px .5px darkslategray;
+ 
+}
+
+a:hover {
+ text-decoration: underline;
+ color: rosybrown;
+}
+
+li{ 
+ display: inline-block;
+ 
+}
+
+ul {
+ margin: 0 0 4px 0;
+}
