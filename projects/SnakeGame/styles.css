@@ -8,6 +8,7 @@ body{
 h1{
  color: white;
  text-shadow: 5px 5px black;
+ margin: auto;
 }
 
 #canvas{
@@ -22,9 +23,10 @@ h1{
 color: darkblue;
 background-color: rgb(109, 252, 109);
 margin-top: 20px;
-width: 180px;
-height:50px;
+width: 230px;
+height:30px;
 font-size:20px;
+margin-bottom: 5px;
 }
 
 #button2{
@@ -33,22 +35,28 @@ font-size:20px;
  margin-left: 40%;
 color: darkblue;
 background-color: coral;
-margin-top: 20px;
-width: 180px;
-height:50px;
-font-size:20px;
+margin-top: 2p5x;
+width: 230px;
+height:27px;
+font-size:19px;
 }
 
 .score, #score{
 justify-content:flex-end;
 position: absolute;
-margin: 20px
+margin-bottom: 0;
+}
+
+.highscore{
+ margin-left: 74%;
+ margin-bottom: 0;
 }
 
 .score{
-
+margin: 0;
 }
 
 #score{
  color: yellow;
+ margin: 0;
 }

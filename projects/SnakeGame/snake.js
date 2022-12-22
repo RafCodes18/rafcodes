@@ -24,6 +24,8 @@ var foodY;
 //score
 let score = 0;
 var gameOver = false;
+let highscore = localStorage.getItem('highscore');
+
 
 //game load
 window.onload = function() {
@@ -56,6 +58,8 @@ if(gameOver){
  //canvas
  ctx.fillStyle="black";
  ctx.fillRect(0, 0, board.width, board.height);
+ let hs = document.getElementById('highscore');
+ hs.textContent = highscore;
 
  //food
  ctx.fillStyle="red";
@@ -67,6 +71,13 @@ if(gameOver){
   score++;
   placeFood();
   playFoodSound();
+
+  let lastHS = localStorage.getItem('highscore');
+  if(lastHS < score){
+    localStorage.setItem('highscore', score);
+    hs.textContent = lastHS;
+  }
+  
  }
 
  //attach head to body
@@ -93,8 +104,8 @@ if(gameOver){
   playGameOver();
   header.textContent = "Game Over";
   header.style.color = "red";
-  header.style.fontSize = "40px";
   score = 0;
+  hs.textContent = highscore;
  } 
  //hits itself
  for(let i = 0; i<snakeBody.length; i++){
@@ -103,8 +114,8 @@ if(gameOver){
    playGameOver();
    header.textContent = "Game Over";
    header.style.color = "red"; 
-   header.style.fontSize = "40px"; 
    score = 0;
+   hs.textContent = highscore;
   }
  }
  //show score
