@@ -24,7 +24,10 @@ var foodY;
 //score
 let score = 0;
 var gameOver = false;
-let highscore = localStorage.getItem('highscore');
+let hs = document.getElementById('highscore');
+//local storage score
+let highscoreSesh = localStorage.getItem('highscore');
+
 
 
 //game load
@@ -58,12 +61,11 @@ if(gameOver){
  //canvas
  ctx.fillStyle="black";
  ctx.fillRect(0, 0, board.width, board.height);
- let hs = document.getElementById('highscore');
- hs.textContent = highscore;
 
  //food
  ctx.fillStyle="red";
  ctx.fillRect(foodX, foodY, blocksize, blocksize);
+ hs.textContent = highscoreSesh;
 
  //handles eating of food, creates new green square
  if(snakeX == foodX && snakeY == foodY){
@@ -72,10 +74,10 @@ if(gameOver){
   placeFood();
   playFoodSound();
 
-  let lastHS = localStorage.getItem('highscore');
-  if(lastHS < score){
+  //if saved score less than current score, set saved score to current
+  if(highscoreSesh < score){
     localStorage.setItem('highscore', score);
-    hs.textContent = lastHS;
+    hs.textContent = score;
   }
   
  }
@@ -105,7 +107,7 @@ if(gameOver){
   header.textContent = "Game Over";
   header.style.color = "red";
   score = 0;
-  hs.textContent = highscore;
+  hs.textContent = highscoreSesh;
  } 
  //hits itself
  for(let i = 0; i<snakeBody.length; i++){
@@ -115,12 +117,13 @@ if(gameOver){
    header.textContent = "Game Over";
    header.style.color = "red"; 
    score = 0;
-   hs.textContent = highscore;
+   hs.textContent = highscoreSesh;
   }
  }
  //show score
  let sc = document.getElementById('score');
  sc.textContent = score;
+ hs.textContent = localStorage.getItem('highscore');
 }
 
 
