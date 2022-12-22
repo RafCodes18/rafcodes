@@ -38,3 +38,17 @@ width: 180px;
 height:50px;
 font-size:20px;
 }
+
+.score, #score{
+justify-content:flex-end;
+position: absolute;
+margin: 20px
+}
+
+.score{
+
+}
+
+#score{
+ color: yellow;
+}
