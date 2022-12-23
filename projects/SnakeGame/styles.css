@@ -6,9 +6,17 @@ body{
 }
 
 h1{
- color: white;
+ color:rgb(15, 250, 15);
+ ;
  text-shadow: 5px 5px black;
  margin: auto;
+}
+
+.title{
+ font-size: 45px;
+ color: rgb(221, 219, 220);
+ text-shadow: none;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 #canvas{
@@ -41,22 +49,37 @@ height:27px;
 font-size:19px;
 }
 
-.score, #score{
-justify-content:flex-end;
-position: absolute;
-margin-bottom: 0;
+
+.container{
+ display: flex;
+ flex-direction: column;
 }
 
-.highscore{
- margin-left: 74%;
- margin-bottom: 0;
+.header{
+ display: flex;
+ font-size: 19px;
 }
 
 .score{
-margin: 0;
+ width:100%;
 }
 
 #score{
- color: yellow;
- margin: 0;
+color:yellow;
 }
+
+.red{
+ width:100%;
+ flex: 10%;
+}
+
+.purple{
+ width:100%;
+}
+
+.board{
+
+ margin: auto;
+ flex-direction: column; 
+}
+

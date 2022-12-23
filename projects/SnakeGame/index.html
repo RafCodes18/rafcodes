@@ -9,26 +9,38 @@
   
 <body>
 
-  
-<div class="content">
-  <div class="score">
-    <h1>Score</h1>
-    <h1 id="score"></h1>
-   </div>
 
 
-  <h1 id="header">Snake</h1>
-  
-  <div class="highscore">
-    <h1>High Score</h1>
-    <h1 id="highscore"></h1>
-   </div>
-  <canvas id="board"></canvas>
+  <div class="header" >    
+        <div class="score">
+          <h1 class="title">Score</h1>
+          <h1 id="score"></h1>
+        </div>
 
-  <input type="button" id="button" value="Restart (Ctrl+R)">
- <a href="https://www.rafcodes.com"> <input type="button" id="button2" value="Return to rafcodes.com"></a>
+        <div class="red">
+          <h1 id="header">Snake</h1>
+        </div>
 
-</div>
+        <div class="purple">
+           <h1 class="title">High Score</h1>
+          <h1 id="highscore"></h1>
+    </div>
+  </div>
+
+
+  <!--board-->
+  <div class="board">
+    <canvas id="board"></canvas> 
+
+    <div class="buttons">
+     <input type="button" id="button" value="Restart (Ctrl+R)">
+     <a href="https://www.rafcodes.com"> <input type="button" id="button2" value="Return to rafcodes.com"></a>
+    </div>
+  </div>
+
+
+
+
 </body>
 </head>
 </html>
