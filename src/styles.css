@@ -63,10 +63,10 @@ p{
     font-weight: 300;
 }
 .nav-list{
-    margin-left: 300px;  
+    margin-left: 250px;  
 }
 .nav-item{
-    margin: 50px;
+    margin: 20px;
 }
 a{
     white-space: nowrap;
@@ -210,12 +210,19 @@ a{
     }
     
     nav{
-        align-items: flex-start;
-        flex-direction: column-reverse;
+        align-items: center;        flex-direction: column-reverse;
         background-color: #2b2c38;
         position: absolute;
     }
-
+   #nav-list{
+    margin: 0; padding: 0; 
+   }
+   .nav-item{
+    margin: 19px;
+   }
+   a{
+    margin: 0px; padding: 0;
+   }
     .logo {
         display: none;
     }
@@ -226,7 +233,13 @@ a{
     .hero-text{
         font-size: 10px;
     }
-   
+   h1{
+    margin: 10px;
+   }
+    p{
+        margin: 10px;
+        font-size: 1.6rem;
+    }
 }
 
 svg{
