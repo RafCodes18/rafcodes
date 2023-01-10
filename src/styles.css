@@ -66,7 +66,9 @@ p{
     margin-left: 250px;  
 }
 .nav-item{
-    margin: 20px;
+    margin: 20px 0px 60px 0;
+    padding-right: 40px; 
+   
 }
 a{
     white-space: nowrap;
@@ -150,7 +152,7 @@ a{
 .project-card{
     width: 300px;
     height: 500px;
-    box-shadow: 5px 5px 20px grey;
+    box-shadow: 5px 5px 20px rgb(116, 115, 114);
     margin: 10px;
     background-color: rgb(255, 175, 110);
     border-radius: 12px;
@@ -181,6 +183,10 @@ a{
     margin-top: 25px;
     width: 250px;
     border-radius: 25px;
+}
+.nav-item>a:hover {
+    display: inline-block;
+    transform: rotate3d(1, 2, 3, 5deg);
 }
 
 @media only screen and (max-width: 1000px){
@@ -256,5 +262,15 @@ svg{
     to{
         stroke-dashoffset: 0;
     }
-
 }
+
+/* text color changes */
+/* #text {
+    animation: color-change 5s linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes color-change {
+    0% { color: rgb(255, 149, 67); }
+    100% { color: rgb(4, 213, 255); }
+  } */
