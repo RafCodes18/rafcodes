@@ -1,10 +1,17 @@
+*{
+    /* outline: 1px solid black; */
+    max-width: 100%;
+}
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: 0;    
 }
-
+html{
+    width: 100%;
+}
 section {
     background-color: White;
+    width: 100%;display: flex; flex-wrap: wrap;
 }
 
 .hero {
@@ -18,19 +25,20 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding:80px;
+    padding:0px;
+    width: 100%;
 }
 nav{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    width: 100%;
 
 }
 
 ul{
     display: flex;
     list-style-type: none;
-    width: 500px;
+    width: 100%;
     justify-content: space-around;
     font-size: 30px;
 }
@@ -54,11 +62,19 @@ p{
     font-size: 30px;
     font-weight: 300;
 }
-
-
+.nav-list{
+    margin-left: 300px;  
+}
+.nav-item{
+    margin: 50px;
+}
+a{
+    white-space: nowrap;
+}
 .hero-area{
     display: flex;   
     height: 100%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -91,11 +107,13 @@ p{
 
 .socials{
     padding-bottom: 200px;
+    position:relative;
 }
 
 .logo{
     height: 120px;
-   margin: 30px;
+    margin: 30px;
+    min-width: 50px;
 }
 
 .social{
@@ -106,14 +124,16 @@ p{
 .sub-section {
     display: flex;
     justify-content: space-around; 
-    padding: 80px;
+    padding: 0px;
+    width: 100%
 }
 
 .sub-section-alternative{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 80px;
+    padding: 0px;
+    width: 100vw;
 }
 
 .headshot{
@@ -126,20 +146,12 @@ p{
     align-items: center;
 }
 
-@media only screen and (max-width: 1000px){
-    .project-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-
 .project-card{
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 20px grey;
     margin: 10px;
-    background-color: rgb(184, 181, 247);
+    background-color: rgb(156, 155, 173);
     border-radius: 12px;
     
 }
@@ -199,4 +211,21 @@ a{
     }
 
    
+}
+
+svg{
+    margin: 40px;
+}
+
+#sig{
+    stroke-dasharray: 2190;
+    stroke-dashoffset: 2190;
+    animation: sign 4s ease;
+    animation-fill-mode: forwards; /* allows sig to stay on screen */
+}
+@keyframes sign {
+    to{
+        stroke-dashoffset: 0;
+    }
+
 }
