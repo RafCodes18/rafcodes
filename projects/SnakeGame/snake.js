@@ -12,6 +12,7 @@ var ctx;
 //snake head
 var snakeX = blocksize * 5;
 var snakeY = blocksize * 5;
+console.log(snakeX);
 var velocityX = 0;
 var velocityY = 0;
 
@@ -55,7 +56,6 @@ window.onload = function() {
 function update(){
 if(gameOver){
  return;
- score = 0;
 }
 
  //canvas
@@ -125,9 +125,6 @@ if(gameOver){
  sc.textContent = score;
  hs.textContent = localStorage.getItem('highscore');
 }
-
-
-
 
 
 //change directions
