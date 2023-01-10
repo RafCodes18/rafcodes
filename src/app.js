@@ -1,5 +1,6 @@
 "use strict"
 
+//hamburger nav
 const hamburgerButton = document.getElementById('hamburger');
 const navList = document.getElementById('nav-list');
 
@@ -11,9 +12,7 @@ hamburgerButton.addEventListener('click', toggleButton);
 
 
 
-
-
-//animate on scroll
+//animate signature on scroll
 let footer = document.getElementById("contact");
 var svg = document.getElementById("svg");
 let sig=document.getElementById('sig');
