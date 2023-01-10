@@ -220,7 +220,7 @@ svg{
     margin: 40px;
 }
 
-#sig{
+.animate{
     stroke-dasharray: 2190;
     stroke-dashoffset: 2190;
     animation: sign 4s ease;
@@ -232,4 +232,11 @@ svg{
     }
 
 }
-/* sf */
+
+@media only screen and (max-width: 350){
+    *{
+        width: 100%;
+    }
+
+
+}
